@@ -7,10 +7,6 @@ const crc = require('crc');
 
     // Calculate CRC-16 checksum for a string
     const input = "00020101021229370016A000000677010111011300668502987665802TH5303764540599.996304";
-    const crcOptions = {
-        polynomial: 0x1021, // Polynomial for CRC-16 (0x1021)
-        initialValue: 0xFFFF, // Initial value for CRC-16 (0xFFFF)
-      };
       
     // Calculate CRC-16 checksum for a string with custom options
     const crc16 = crc.crc16xmodem(input, 0xFFFF);
